@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability Predictor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sustainability Predictor</h1>
+        <form id="sustainability-form">
+            <label for="participant-id">Participant ID:</label>
+            <input type="number" id="participant-id" name="ParticipantID" value="1" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="Age" required>
+
+            <label for="home-size">Home Size (sq ft):</label>
+            <input type="number" id="home-size" name="HomeSize" required>
+
+            <label for="monthly-electricity">Monthly Electricity Consumption (kWh):</label>
+            <input type="number" id="monthly-electricity" name="MonthlyElectricityConsumption" required>
+
+            <label for="monthly-water">Monthly Water Consumption (gallons):</label>
+            <input type="number" id="monthly-water" name="MonthlyWaterConsumption" required>
+
+            <label for="location">Location:</label>
+            <select id="location" name="Location" required>
+                <option value="Urban">Urban</option>
+                <option value="Suburban">Suburban</option>
+                <option value="Rural">Rural</option>
+            
+            </select>
+
+            <label for="diet-type">Diet Type:</label>
+            <select id="diet-type" name="DietType" required>
+                <option value="Mostly Animal-Based">Mostly Animal-Based</option>
+                <option value="Mostly Plant-Based">Mostly Plant-Based</option>
+                <option value="Balanced">Balanced</option>
+
+            </select>
+
+            <label for="transportation-mode">Transportation Mode:</label>
+            <select id="transportation-mode" name="TransportationMode" required>
+                <option value="Car">Car</option>
+                <option value="Bike">Bike</option>
+                <option value="Public Transit">Public Transit</option>
+                <option value="Walk">Walk</option>
+            </select>
+
+            <label for="energy-source">Energy Source:</label>
+            <select id="energy-source" name="EnergySource" required>
+                <option value="Non-Renewable">Non-Renewable</option>
+                <option value="Renewable">Renewable</option>
+                <option value="Mixed">Mixed</option>
+            </select>
+
+            <label for="home-type">Home Type:</label>
+            <select id="home-type" name="HomeType" required>
+                <option value="Apartment">Apartment</option>
+                <option value="House">House</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="Gender" required>
+                <option value="Male">Male</option>
+                <option value="Male">Female</option>
+                <option value="Non-Binary">Non-Binary</option>
+                <option value="Prefer not to say">Prefer not to say</option>
+            </select>
+
+            <label for="local-food-frequency">Local Food Frequency:</label>
+            <select id="local-food-frequency" name="LocalFoodFrequency" required>
+                <option value="Often">Often</option>
+                <option value="Rarely">Rarely</option>
+                <option value="Sometimes">Sometimes</option>
+            </select>
+
+            <label for="clothing-frequency">Clothing Frequency:</label>
+            <select id="clothing-frequency" name="ClothingFrequency" required>
+                <option value="Often">Often</option>
+                <option value="Rarely">Rarely</option>
+                <option value="Sometimes">Sometimes</option>
+                <option value="Always">Always</option>
+            </select>
+
+            <label for="sustainable-brands">Use Sustainable Brands:</label>
+            <select id="sustainable-brands" name="SustainableBrands" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <label for="environmental-awareness">Environmental Awareness (1-5):</label>
+            <input type="number" id="environmental-awareness" name="EnvironmentalAwareness" min="1" max="5" required>
+
+            <label for="community-involvement">Community Involvement:</label>
+            <select id="community-involvement" name="CommunityInvolvement" required>
+                <option value="Low">Low</option>
+                <option value="Moderate">Moderate</option>
+                <option value="High">High</option>
+                <option value="None">None</option>
+            </select>
+
+            <label for="using-plastic">Using Plastic Products:</label>
+            <select id="using-plastic" name="UsingPlasticProducts" required>
+                <option value="Never">Never</option>
+                <option value="Often">Often</option>
+                <option value="Rarely">Rarely</option>
+                <option value="Sometimes">Sometimes</option>
+            </select>
+
+            <label for="disposal-methods">Disposal Methods:</label>
+            <select id="disposal-methods" name="DisposalMethods" required>
+                <option value="Composting">Composting</option>
+                <option value="Landfill">Landfill</option>
+                <option value="Recycling">Recycling</option>
+                <option value="Combination">Combination</option>
+            </select>
+
+            <label for="physical-activities">Physical Activities:</label>
+            <select id="physical-activities" name="PhysicalActivities" required>
+                <option value="High">High</option>
+                <option value="Low">Low</option>
+                <option value="Moderate">Moderate</option>
+                <option value="None">None</option>
+            </select>
+
+            <button type="submit">Predict Sustainability</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
